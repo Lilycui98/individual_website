@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Art Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- 左侧固定导航栏 -->
+    <aside class="sidebar">
+        <div class="sidebar-top">
+            <!-- Logo 区域 -->
+            <div class="logo">
+                <div class="logo-icon">
+                    <img src="images/logo.jpg" alt="我的Logo">
+                </div>
+                <div class="logo-text">崔哲海</div>
+            </div>
+
+            <!-- 导航菜单 -->
+            <nav class="nav-menu">
+                <div class="nav-group">
+                    <a href="#works" class="nav-link active" data-section="works">作品</a>
+                </div>
+                <div class="nav-group">
+                    <a href="#about" class="nav-link" data-section="about">关于我</a>
+                </div>
+            </nav>
+        </div>
+
+        <div class="sidebar-bottom">
+            <div class="copyright">© 2026 崔哲海. All rights reserved.</div>
+        </div>
+    </aside>
+
+    <!-- 移动端顶部导航 -->
+    <header class="mobile-header">
+        <div class="mobile-logo">崔哲海</div>
+        <button class="menu-toggle" aria-label="菜单">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <!-- 右侧主内容区 -->
+    <main class="main-content">
+        <!-- 作品区 -->
+        <section id="works" class="section active">
+    <!-- 所有作品统一展示 -->
+                <div class="hero-section">
+                    <h1 class="hero-title">崔哲海版画作品</h1>
+                    <p class="hero-subtitle">木刻版画</p>
+                </div>
+                <div class="art-grid" id="all-grid"></div>
+        </section>
+
+        <!-- About -->
+        <section id="about" class="section">
+            <div class="about-content">
+                <h2 class="section-title">关于我</h2>
+                <div class="about-text">
+                    <p>你好，我是一名插画师和视觉艺术家。</p>
+                    <p>这里展示的是我近年来的作品，包括商业项目、编辑插画以及个人创作。</p>
+                    <p>如果你对我的作品感兴趣，欢迎通过以下方式联系我：</p>
+                    <p class="contact-email">email@example.com</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 图片查看弹窗 -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" aria-label="关闭">&times;</button>
+        <button class="lightbox-prev" aria-label="上一张">&#10094;</button>
+        <div class="lightbox-content">
+            <img src="" alt="" id="lightbox-img">
+            <div class="lightbox-caption" id="lightbox-caption"></div>
+        </div>
+        <button class="lightbox-next" aria-label="下一张">&#10095;</button>
+    </div>
+
+    <!-- 数据文件 -->
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+/* ========================================
+   Responsive Design (响应式设计)
+   ======================================== */
+
+/* 平板尺寸 */
+@media (max-width: 1024px) {
+    :root {
+        --sidebar-width: 220px;
+    }
+
+    .sidebar {
+        padding: 40px 20px;
+    }
+
+    .main-content {
+        padding: 40px 25px;
+    }
+
+    .art-grid {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 25px;
+    }
+
+    .hero-title {
+        font-size: 36px;
+    }
+}
+
+/* 手机尺寸 */
+@media (max-width: 768px) {
+    .sidebar {
+        display: none;
+    }
+
+    .mobile-header {
+        display: flex;
+    }
+
+    .main-content {
+        margin-left: 0;
+        padding: 80px 16px 30px;
+    }
+
+    .hero-section {
+        margin-bottom: 30px;
+        padding: 20px 0;
+    }
+
+    .hero-title {
+        font-size: 28px;
+    }
+
+    .hero-subtitle {
+        font-size: 16px;
+    }
+
+    .section-title {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+
+    .art-grid {
+        grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+        gap: 20px;
+    }
+
+    .lightbox {
+        padding: 20px;
+    }
+
+    .lightbox-prev,
+    .lightbox-next {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+
+    .lightbox-close {
+        top: 10px;
+        right: 10px;
+        width: 40px;
+        height: 40px;
+        font-size: 28px;
+    }
+}
+
+/* 小屏手机 */
+@media (max-width: 480px) {
+    .main-content {
+        padding: 80px 12px 20px;
+    }
+
+    .hero-title {
+        font-size: 24px;
+    }
+
+    .art-grid {
+        gap: 16px;
+    }
+
+    .art-title {
+        font-size: 14px;
+    }
+
+    .art-description {
+        font-size: 12px;
+    }
+}
